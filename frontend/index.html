@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DMDless Prototype</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header>
+        <h1>DMDless DM Prototype</h1>
+        <p>Start with a single player and a lightweight DM judgment call.</p>
+      </header>
+      <section class="panel">
+        <div class="field">
+          <label for="playerId">Player ID</label>
+          <input id="playerId" type="text" value="one" />
+        </div>
+        <div class="field">
+          <label for="message">Player Message</label>
+          <textarea id="message" rows="4" placeholder="Describe your action..."></textarea>
+        </div>
+        <button id="send">Send to DM</button>
+      </section>
+      <section class="panel">
+        <h2>DM Response</h2>
+        <div id="response" class="response">Awaiting input.</div>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
